@@ -4,6 +4,12 @@ class Busco < Formula
   url "https://gitlab.com/ezlab/busco/repository/3.0.2/archive.tar.bz2"
   sha256 "cd0699545a126c7cc94604eef7c8dc50379b5d11becbad3a0f55d995a4c5e1c0"
   head "https://gitlab.com/ezlab/busco.git"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "cdb14d393a9791cd121756fd74f6677f2e4d577cc268036fa7fb708a1e65edd2" => :sierra
+    sha256 "d5fc62e2ab2d5cf248d6cac19de3be8c69b6ec4ebbcd8d132974dbf0add3d6ca" => :x86_64_linux
+  end
+
   # doi "10.1093/bioinformatics/btv351"
   # tag "bioinformatics"
 
