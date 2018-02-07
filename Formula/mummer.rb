@@ -4,6 +4,14 @@ class Mummer < Formula
   url "https://downloads.sourceforge.net/project/mummer/mummer/3.23/MUMmer3.23.tar.gz"
   sha256 "1efad4f7d8cee0d8eaebb320a2d63745bb3a160bb513a15ef7af46f330af662f"
   revision 2
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "08eb9012c2e9466b8945c9bdd6d4397d5ad70b025c102f5a2de1dcbff5175755" => :sierra
+    sha256 "14086ae0f8420cc5d322f5ccfe614d418a2eb4bdd5304126881a66cc7b33f35b" => :x86_64_linux
+  end
+
   # cite "https://doi.org/10.1186/gb-2004-5-2-r12"
 
   depends_on "tcsh" unless OS.mac?
