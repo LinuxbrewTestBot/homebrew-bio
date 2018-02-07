@@ -4,6 +4,11 @@ class Arcs < Formula
   url "https://github.com/bcgsc/arcs/archive/v1.0.1.tar.gz"
   sha256 "4dc5336e741abdd0197335a21fcdc578eb4251131caf86ca4fb191c125065bf4"
   head "https://github.com/bcgsc/arcs.git"
+  bottle do
+    sha256 "0015ed6dfafcad4c001fa2db63b6cd9c93cf768dcc2103ed3901222b14855e89" => :sierra
+    sha256 "140ea9634bd9ec54eeaa41e69e502f7bd928dce7423d4f39687820a0ff4aa3c0" => :x86_64_linux
+  end
+
   # cite "https://doi.org/10.1093/bioinformatics/btx675"
 
   depends_on "autoconf" => :build
