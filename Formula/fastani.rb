@@ -4,6 +4,12 @@ class Fastani < Formula
   url "https://github.com/ParBLiSS/FastANI/archive/v1.0.tar.gz"
   sha256 "36f35211f2f4dc02b4e250af7c40c5f616d30239f5ef7aa366cdec65075a7db7"
   head "https://github.com/ParBLiSS/FastANI.git"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "c18aa0ce0cce03a4c792deee3e6ffa04903d32900395c421ff51f5d561a30dfe" => :sierra
+    sha256 "4750f5c51b9f93ae04a8436e106809b6e8743692284da012393561b056fad040" => :x86_64_linux
+  end
+
   # cite "https://doi.org/10.1101/225342"
 
   depends_on "zlib" unless OS.mac?
