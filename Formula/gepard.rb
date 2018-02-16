@@ -3,6 +3,13 @@ class Gepard < Formula
   homepage "http://cube.univie.ac.at/gepard"
   url "https://github.com/univieCUBE/gepard/blob/master/dist/Gepard-1.40.jar?raw=true"
   sha256 "9f35adefbc4843eb87e545bb54a47ef007ea02d145f2c13df86756e63bef8418"
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "c8e3c9921c645c8c1656980a39168078a369dfbe7b56cc77f74fdd3741eca7d4" => :sierra
+  end
+
   # cite Krumsiek_2007: "https://doi.org/10.1093/bioinformatics/btm039"
 
   depends_on :java
