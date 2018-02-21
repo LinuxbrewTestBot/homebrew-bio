@@ -1,6 +1,11 @@
 class Ascp < Formula
   desc "Aspera command-line download client"
   homepage "https://example.com/"
+  bottle do
+    sha256 "c78e4351309f0c0e543420d421d559f87f3b66c31a1212200263ea7c77752093" => :sierra
+    sha256 "00416de41eae2e20018d28197714d868f12009c7012d9c914e74392cff80bbdc" => :x86_64_linux
+  end
+
   if OS.mac?
     url "https://download.asperasoft.com/download/sw/cli/3.7.7/aspera-cli-3.7.7.608.927cce8-mac-10.7-64-release.sh"
     sha256 "c6f7af506a4de8858b8b40e63883e671926af7b43160d4fb6765790c56b299ba"
