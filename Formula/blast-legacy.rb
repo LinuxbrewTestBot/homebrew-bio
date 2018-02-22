@@ -1,6 +1,12 @@
 class BlastLegacy < Formula
   desc "Legacy NCBI BLAST"
   homepage "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "cb62bf738ed68725b0711f9259ad4cfb8273d6b445cc3b2dabc0de3c6a9d4af8" => :sierra
+    sha256 "bf4932732f4f8a1f174db415e0fee1912e6ceb73b46ef907d44f9ed47df66857" => :x86_64_linux
+  end
+
   if OS.mac?
     url "ftp://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/2.2.26/blast-2.2.26-universal-macosx.tar.gz"
     sha256 "eabad6b37ded329a7edd14d650e0aedf7b88aa4bd1611a228d5191952d83f3b8"
