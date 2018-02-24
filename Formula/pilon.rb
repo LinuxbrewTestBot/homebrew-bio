@@ -4,6 +4,13 @@ class Pilon < Formula
   url "https://github.com/broadinstitute/pilon/releases/download/v1.22/pilon-1.22.jar"
   sha256 "ff738f3bbb964237f6b2cf69243ebf9a21cb7f4edf10bbdcc66fa4ebaad5d13d"
   head "https://github.com/broadinstitute/pilon.git"
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "79b1480bd485ebb3985db93d8361d68b7f5408c586f127f285288de3d7781efc" => :sierra
+  end
+
   # cite Walker_2014: "https://doi.org/10.1371/journal.pone.0112963"
 
   depends_on :java
