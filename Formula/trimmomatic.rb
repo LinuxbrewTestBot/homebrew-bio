@@ -5,6 +5,13 @@ class Trimmomatic < Formula
   url "http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.36.zip"
   sha256 "4846c42347b663b9d6d3a8cef30da2aec89fc718bf291392c58e5afcea9f70fe"
 
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "0a97beba1eb0e3808ea1cc7cd36193170783884e084513a9d0a700f851d6345d" => :sierra
+  end
+
   depends_on :java
 
   def install
