@@ -6,9 +6,9 @@ class Bandage < Formula
   sha256 "2e8332e59b95438040a1b0ad29b3730ac63d7c638c635aeddde4789bf7a3116c"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
     cellar :any_skip_relocation
-    sha256 "2f9db41fa2cc366255bc4cf5d58db949f0765db087021adf6d701a44b4a2f6ab" => :x86_64_linux
+    rebuild 1
+    sha256 "438f1dce6949c73b100ad7b255fc56cac6f4c65a36971c1634e6219bdbec654e" => :x86_64_linux
   end
 
   depends_on :linux
