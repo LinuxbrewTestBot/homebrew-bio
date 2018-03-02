@@ -1,6 +1,14 @@
 class Rmblast < Formula
   desc "RepeatMasker compatible version of the standard NCBI BLAST suite"
   homepage "http://www.repeatmasker.org/RMBlast.html"
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "bd7e6df63714fb2cc07ea1bc5dc3fcfb23364d8f86a66fd6bf8af333d8a18dc1" => :sierra
+    sha256 "e4179700df3ad81604cb6031a9d82e971d3fa88ac0c9b6d8f949af3b8be3edb8" => :x86_64_linux
+  end
+
   if OS.mac?
     url "https://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/LATEST/ncbi-rmblastn-2.2.28-universal-macosx.tar.gz"
     sha256 "f94e91487b752eb24386c3571250a3394ec7a00e7a5370dd103f574c721b9c81"
