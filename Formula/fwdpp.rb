@@ -8,10 +8,9 @@ class Fwdpp < Formula
   head "https://github.com/molpopgen/fwdpp.git"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
-    cellar :any
-    sha256 "e24702907b9391dc74648cd0afa66bb471085b8ca7f816d76820a5d50e5069ed" => :sierra_or_later
-    sha256 "f5a7a5054efbdea1096c655f4d44f265886721bee0c4e1ddf027a559a26fc26b" => :x86_64_linux
+    rebuild 1
+    sha256 "035ba0ccfe0abc61701d4c600481a81fdb2013bcea1af09de2cda63789fee167" => :sierra
+    sha256 "569b3781893249c62790233c4a567db9ebb1c97a9ab35439f026ecb08aaa2c98" => :x86_64_linux
   end
 
   # build fails on Yosemite
