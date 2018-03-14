@@ -2,6 +2,14 @@ class Seqkit < Formula
   # Shen_2016: "https://doi.org/10.1371/journal.pone.0163962"
   desc "Ultrafast FASTA/Q file manipulation"
   homepage "https://bioinf.shenwei.me/seqkit/"
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "7a69ce7a8b1c53858005754c4f3725262a0539166c3fcc316f2ac25f422f0363" => :sierra
+    sha256 "c17453614853dcb7bf49d94c3f395f9b4fb2c162c4667adfe0d73b0988621c82" => :x86_64_linux
+  end
+
   # We use binaries to avoid compiling Go code
   if OS.mac?
     url "https://github.com/shenwei356/seqkit/releases/download/v0.7.2/seqkit_darwin_amd64.tar.gz"
