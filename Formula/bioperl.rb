@@ -5,6 +5,14 @@ class Bioperl < Formula
   url "https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.007002.tar.gz"
   sha256 "17aa3aaab2f381bbcaffdc370002eaf28f2c341b538068d6586b2276a76464a1"
 
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "ba2174ceef73165a45f75f7640a86192e8030e0dbc9cf4e61a76dc99bfc016ca" => :sierra
+    sha256 "40549ab8543cf9460c5cfaa6a91c85457eb790f849a149e3b15542bff66ff3fd" => :x86_64_linux
+  end
+
   depends_on "cpanminus" => :build
   depends_on "perl" unless OS.mac?
 
