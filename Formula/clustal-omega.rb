@@ -9,8 +9,9 @@ class ClustalOmega < Formula
     root_url "https://homebrew.bintray.com/bottles-bio"
     prefix "/usr/local"
     cellar :any
-    sha256 "1f67880767ddb90a20c34dc57d1cb29c41bd712dadb07ebabedb1e72aefae3c6" => :sierra
-    sha256 "e63bbab0368c0dc91debd75153396a11639716506560c61dc1251cfd7b5d39ee" => :x86_64_linux
+    rebuild 1
+    sha256 "1c5ccf3162a96f0ab4d3cfe754608f8b0a6b9d626072db84eeb0ec6c534a3653" => :sierra
+    sha256 "e063f2173b12c3ba3ba3367762f700ff7e1f57e8119088a9383a650a9a27facc" => :x86_64_linux
   end
 
   depends_on "argtable"
