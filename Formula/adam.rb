@@ -6,10 +6,11 @@ class Adam < Formula
   sha256 "d272553dec2d5f25cea72b05ebf656db7be65b33657e351a0cf55543e2868277"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
     cellar :any_skip_relocation
-    sha256 "c7f6a6d8ee7d73c255a17ba442f4c0d841e1e6eba3d6f72b84f81d2d1e8ae589" => :sierra_or_later
-    sha256 "81364913e52d15dc450b214d17355c44c00d115b3349c475e0fe7c5f0b82c982" => :x86_64_linux
+    sha256 "4f815750920318525185ae4755c76e9aff84505f27edd6a605c2b99e15cee154" => :sierra
+    sha256 "3fa88a1045bf777982750877ecaedbd0a6a94e36b1d4279006a61f3db523ad3b" => :x86_64_linux
   end
 
   head do
