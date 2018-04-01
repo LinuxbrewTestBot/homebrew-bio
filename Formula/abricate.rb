@@ -6,10 +6,12 @@ class Abricate < Formula
   head "https://github.com/tseemann/abricate.git"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
     cellar :any_skip_relocation
-    sha256 "c2d91f0289166944030f9f1e386b4933ce004de146b5e6505ff718a6894f1318" => :sierra
-    sha256 "0ee6ee07fef3fa7280e831e06845f405182f19ca6067651d89592e73f2677f21" => :x86_64_linux
+    rebuild 1
+    sha256 "7375576e0c2bcf045bbaeb2f0705eba6e3758715fff1c0e20fb94f0ae51d8856" => :sierra
+    sha256 "8f9f531e9a7123e6078613350842062133316d5c426e4f77ac39fc1609862817" => :x86_64_linux
   end
 
   depends_on "cpanminus" => :build
