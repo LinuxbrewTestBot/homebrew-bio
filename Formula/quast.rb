@@ -9,9 +9,12 @@ class Quast < Formula
   head "https://github.com/ablab/quast.git"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
-    sha256 "101ecf5624406959757f074218ba95ebc16a226b852f68832b0da29e0b303779" => :sierra_or_later
-    sha256 "ce3487e38818178541943c3961139339cbfb6f785ffb744a0eddef8d28aabd90" => :x86_64_linux
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar "/usr/local/Cellar"
+    rebuild 1
+    sha256 "b3db8f15c3473f17675249a0833ce918ebcdae26f8ab914d5e46858224d7a9bf" => :sierra
+    sha256 "d3f9c9f0f9417cdb7cb7a33fabfc2cff4f261bae0fc73478573567b578192517" => :x86_64_linux
   end
 
   depends_on "matplotlib"
