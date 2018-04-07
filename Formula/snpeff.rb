@@ -6,6 +6,12 @@ class Snpeff < Formula
   version "4.3t"
   sha256 "d55a7389a78312947c1e7dadf5e6897b42d3c6e942e7c1b8ec68bb35d2ae2244"
 
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "4cf8bb993288038ba82132a6ed0ae7794d447e20944a8882da1bf1fba0757149" => :sierra
+    sha256 "e3088b0a1dcd51a33e74867cdb157a3bfa470101fbd71c61e3f8e00c04118dd5" => :x86_64_linux
+  end
+
   depends_on :java => "1.8+"
 
   def install
