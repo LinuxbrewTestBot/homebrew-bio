@@ -7,10 +7,10 @@ class Unicycler < Formula
   head "https://github.com/rrwick/Unicycler/releases"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
-    cellar :any_skip_relocation
-    sha256 "4cac1f0f8dcaec6ec921ddb3ca78f41f2a93e39103eee4f00838d301ea3ceb08" => :sierra_or_later
-    sha256 "58549e200c6d2eb13ff70a2d43138a0a9fa353dae388f95f43572681d991bae5" => :x86_64_linux
+    prefix "/usr/local"
+    cellar :any
+    sha256 "371519d2cd3ab0aab5bc6a093446f5d5b185da90dbf3404bc2056aa2af9ae512" => :sierra
+    sha256 "c7d704473906bd1e2ca56561d741dfae726f50248417d9c93f8586e74076cc5a" => :x86_64_linux
   end
 
   needs :cxx14
