@@ -8,8 +8,9 @@ class Megahit < Formula
 
   bottle do
     root_url "https://linuxbrew.bintray.com/bottles-bio"
-    sha256 "c82763b2625de5ccb1c9d5c671eb4c4aae36c584b569f3330618d70b7ac568d8" => :sierra_or_later
-    sha256 "48f6cacd8476c46690ec7d4e094e3280a34762d4678c127633c8dc6ab5b9a006" => :x86_64_linux
+    rebuild 1
+    sha256 "a8a02e1e1ebb0bcf06c1e0f414f894b501e54f181c39c3cca3d8d5b40c3c8e81" => :sierra_or_later
+    sha256 "1d65426e25bb7cb944fcbed2d083bf6ebfd667a9a872f54595be11100c0c478c" => :x86_64_linux
   end
 
   fails_with :clang # needs openmp
