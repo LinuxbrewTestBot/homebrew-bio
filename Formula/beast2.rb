@@ -5,6 +5,14 @@ class Beast2 < Formula
   url "https://github.com/CompEvol/beast2/archive/v2.5.0.tar.gz"
   sha256 "678967e698a24ffa40b11e74b07016c064be75fd114f4ea42b21cc58d07d7557"
 
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "6fe1fd9679d3526f70bc610ccc039a589f9a24fdfe84ebfd5b5cbefe953e7012" => :sierra
+    sha256 "333eea1f859d21c26249c6959fc9f2dec4c12da12d1f73f18c515da11c91640f" => :x86_64_linux
+  end
+
   depends_on "ant" => :build
   depends_on :java
 
