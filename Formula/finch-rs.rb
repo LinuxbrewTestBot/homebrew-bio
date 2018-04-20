@@ -1,6 +1,14 @@
 class FinchRs < Formula
   desc "Genomic minhashing implementation in Rust"
   homepage "https://github.com/onecodex/finch-rs"
+  bottle do
+    root_url "https://linuxbrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar :any_skip_relocation
+    sha256 "0fe81384891552713f78ca597a56ece5495b6ba1957f4462367d25dc81e4062f" => :sierra_or_later
+    sha256 "04c19cd85384188617657ed68f18e1a4e43123be4a5b1d1e555699d956de4c97" => :x86_64_linux
+  end
+
   if OS.mac?
     url "https://github.com/onecodex/finch-rs/releases/download/v0.1.5/finch-mac64-v0.1.5.zip"
     sha256 "0638b92a11f243d410f8d72c727d31c23f9b01e441b47971080e80caeb706ae4"
