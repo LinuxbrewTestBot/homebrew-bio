@@ -5,6 +5,14 @@ class Augustus < Formula
   sha256 "b5eb811a4c33a2cc3bbd16355e19d530eeac6d1ac923e59f48d7a79f396234ee"
   revision 2
 
+  bottle do
+    root_url "https://linuxbrew.bintray.com/bottles-bio"
+    prefix "/usr/local"
+    cellar "/usr/local/Cellar"
+    sha256 "b041267ab0aec76fcabb2079dca6e44e4f55d7ff6ffa04d7eb3572b08cfcbb90" => :sierra_or_later
+    sha256 "3829eb5b85d2f5b47c2f8ca751a00c9b8f4a0d5b0ffd9ded9b555cb3f9acc12a" => :x86_64_linux
+  end
+
   depends_on "bamtools"
   depends_on "boost"
 
