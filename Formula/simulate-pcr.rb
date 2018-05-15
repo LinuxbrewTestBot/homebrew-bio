@@ -7,8 +7,11 @@ class SimulatePcr < Formula
 
   depends_on "bioperl"
   depends_on "blast"
+  depends_on "LWP::Simple" => :perl
 
   def install
+    cmd = Language::Java.java_home_cmd("1.8")
+    ENV["JAVA_HOME"] = Utils.popen_read(cmd).chomp
     bin.install "simulate_PCR"
     inreplace bin/"simulate_PCR", "#!/usr/bin/perl", "#!/usr/bin/env perl"
   end
