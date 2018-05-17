@@ -8,7 +8,7 @@ class SimulatePcr < Formula
 
   depends_on "bioperl"
   depends_on "blast"
-  depends_on "LWP::Simple" => :perl
+  depends_on "perl" unless OS.mac?
 
   def install
     libexec.install Dir["*"]
