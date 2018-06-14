@@ -7,8 +7,8 @@ class SimulatePcr < Formula
   sha256 "022d1cc595d78a03b6a8a982865650f99d9fa067997bfea574c2416cc462e982"
 
   depends_on "bioperl"
-  depends_on "blast"
   depends_on "cpanminus" => :build
+  depends_on "blast"
   depends_on "perl" unless OS.mac?
 
   def install
