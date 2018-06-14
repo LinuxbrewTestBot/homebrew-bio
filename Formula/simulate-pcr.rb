@@ -8,10 +8,10 @@ class SimulatePcr < Formula
 
   depends_on "bioperl"
   depends_on "blast"
+  depends_on "cpanminus" => :build
   depends_on "perl" unless OS.mac?
 
   def install
-    libexec.install Dir["*"]
     bin.install "simulate_PCR"
     inreplace bin/"simulate_PCR", "#!/usr/bin/perl", "#!/usr/bin/env perl"
     ENV.prepend_create_path "PERL5LIB", libexec/"lib/perl5"
