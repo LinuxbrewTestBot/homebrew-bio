@@ -52,7 +52,7 @@ class MmtfCpp < Formula
         }
       EOS
 
-      system ENV.cc, "-o", "mmtf_demo", "mmtf_demo.cpp", "-L#{lib}", "-lmmtf"
+      system ENV.cc, "-o", "mmtf_demo", testpath/"mmtf_demo.cpp", "-lmmtf"
       assert_match "Successfully read", `./mmtf_demo 173D.mmtf`
     end
   end
