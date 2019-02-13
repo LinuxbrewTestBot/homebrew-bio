@@ -5,6 +5,13 @@ class MmtfCpp < Formula
   url "https://github.com/rcsb/mmtf-cpp/archive/v1.0.0.tar.gz"
   sha256 "881f69c4bb56605fa63fd5ca50842facc4947f686cbf678ad04930674d714f40"
 
+  bottle do
+    root_url "https://linuxbrew.bintray.com/bottles-bio"
+    cellar :any_skip_relocation
+    sha256 "eab793cdcfb75771665fdbc2547dce711c38d19feb6335ec78c043cca7383819" => :sierra
+    sha256 "432ef03ff7364bafc18b67c68e303eb137afbc46a8aaf8eee150e752439871bf" => :x86_64_linux
+  end
+
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "msgpack"
