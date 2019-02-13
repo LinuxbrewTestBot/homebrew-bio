@@ -1,4 +1,5 @@
 class MmtfCpp < Formula
+  # cite Bradley_2017: "https://doi.org/10.1371/journal.pcbi.1005575"
   desc "The pure C++ implementation of the MMTF API, decoder and encoder"
   homepage "https://github.com/rcsb/mmtf-cpp"
   url "https://github.com/rcsb/mmtf-cpp/archive/v1.0.0.tar.gz"
@@ -22,38 +23,19 @@ class MmtfCpp < Formula
 
   test do
     resource("173Dmmtf").stage do
-      # Reference: https://github.com/rcsb/mmtf-cpp/blob/master/examples/mmtf_demo.cpp
+      # Reference: https://github.com/rcsb/mmtf-cpp/README.md
 
-      (testpath/"mmtf_demo.cpp").write <<~EOS
+      (testpath/"test.cpp").write <<~EOS
         #include <mmtf.hpp>
-        #include <iostream>
-        #include <string>
-
         int main(int argc, char** argv) {
-            // check arguments
-            if (argc < 2) {
-              printf("USAGE: mmtf_demo <mmtffile>\n");
-              return 1;
-            }
-
-            // decode MMTF file
-            std::string filename(argv[1]);
-            mmtf::StructureData data;
-            mmtf::decodeFromFile(data, filename);
-
-            // check if the data is self-consistent
-            if (data.hasConsistentData(true)) {
-              std::cout << "Successfully read " << filename << ".\n";
-              return 0;
-            } else {
-              std::cout << "Inconsistent data in " << filename << ".\n";
-              return 1;
-            }
+          mmtf::StructureData data;
+          mmtf::decodeFromFile(data, "./173D.mmtf");
+          return 0;
         }
       EOS
 
-      system ENV.cc, "-o", "mmtf_demo", testpath/"mmtf_demo.cpp", "-lmmtf"
-      assert_match "Successfully read", `./mmtf_demo 173D.mmtf`
+      system ENV.cxx, "-o", "mmtftest", testpath/"test.cpp"
+      system "./mmtftest"
     end
   end
 end
