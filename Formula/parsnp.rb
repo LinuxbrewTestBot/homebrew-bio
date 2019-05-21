@@ -8,10 +8,10 @@ class Parsnp < Formula
   head "https://github.com/marbl/parsnp.git"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
     cellar :any_skip_relocation
-    sha256 "b0e844a937884f368e4b1294e0d356155dd3371bdfe37c778826c0c59b310246" => :sierra
-    sha256 "0717e9aa5c6fdff91bb340b415694849813465beae6103fa949c64a774d9a453" => :x86_64_linux
+    rebuild 1
+    sha256 "7963dd05d1247f832b4c9d4dba0c6ab7ae268040171f0f3b6cfaece848744004" => :sierra
+    sha256 "d77b446c1ba43b5fa2925d045da1c89f457cd9c8c193663e3467115d84fdf5ee" => :x86_64_linux
   end
 
   depends_on "autoconf" => :build
