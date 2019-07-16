@@ -6,9 +6,9 @@ class Iva < Formula
   sha256 "91ba402d0feacc88b3e34e71b4f10e0552702887e6e416076e57f95f6aaf7fad"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
-    sha256 "8d400f42176e2ca421f6bdca8bd735a0ef2ab8af56f1ffd0f824e7d4f6b15e21" => :sierra
-    sha256 "3c4914d151ebef4d190cfe211c4262eea85cb31ee0d61e3b9c6e37001a6586e1" => :x86_64_linux
+    cellar :any
+    sha256 "49a1baf28d5f8e89175dc01f08e3e6a9b8439e493ade3f58a162cc9561b3ced1" => :sierra
+    sha256 "eea163ae65cacbfca08005e99169d79ec7b641996b23751af0492176784576a6" => :x86_64_linux
   end
 
   depends_on "kmc"
