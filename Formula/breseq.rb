@@ -7,10 +7,9 @@ class Breseq < Formula
   head "https://github.com/barricklab/breseq.git"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
     cellar :any_skip_relocation
-    sha256 "3b2e34a9b72e16b288ee4505c1c550a31829b4b5f4de2e7591c648b91a743db2" => :sierra
-    sha256 "1dbff33c770ed9ce16a0225023af135a81d9b24d2aba322cbafb5a66cd4ba3b9" => :x86_64_linux
+    sha256 "488ac9146529595b84a64427c7f4409bc752e6a86f208b314454b26a4f4ff15e" => :sierra
+    sha256 "e5d009f4fd6b8dcd4327b0fc43bd75254d61d0a99c6618c812449c493b2c600b" => :x86_64_linux
   end
 
   depends_on "autoconf" => :build
