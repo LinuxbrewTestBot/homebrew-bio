@@ -6,8 +6,7 @@ class Meme < Formula
   sha256 "94826793576f4dd2f10fef829426dcde57f3cc990e462d9428c84f83d71eaeeb"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
-    sha256 "bd12839fa2cab51ddd2165764fee991f9a01f1ade1f766600a1301fbda55dd60" => :x86_64_linux
+    sha256 "7666afc3836d7dc257668e7b6070ffb75f9b71089f0d46527369f28353cbab84" => :x86_64_linux
   end
 
   # Work around the error:
