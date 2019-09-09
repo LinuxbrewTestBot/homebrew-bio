@@ -6,10 +6,9 @@ class Arcs < Formula
   sha256 "253bfcc7dd72cdbe21765d122a8503f22d997b4aa6ee29e9360dd1f66a2208ae"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
-    cellar :any
-    sha256 "025214bd4e6de45f1509d699259a4f5eb6e0d5cf0d1b81e2d9047f31b4753952" => :sierra
-    sha256 "7d859bde63d4e711bb5be08925f7d247c490b8234ef578594feb90c42540e6c1" => :x86_64_linux
+    cellar :any_skip_relocation
+    sha256 "763acfd8a19d9b0f3f242a3ed5e980f1a55155242f6020a9b78f873e6a3ddede" => :sierra
+    sha256 "22e26ecd9e44654890f83725f1e2e9acef7bd1c35df0130a0bdad062db3a2161" => :x86_64_linux
   end
 
   head do
