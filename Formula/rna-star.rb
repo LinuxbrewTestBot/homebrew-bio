@@ -1,6 +1,12 @@
 class RnaStar < Formula
   desc "RNA-seq aligner"
   homepage "https://github.com/alexdobin/STAR"
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "1509530ce65b0c90b7dfba22af8027653f4c8acd41c949662881a401f3f8090c" => :mojave
+    sha256 "8f9dd087f539f353b40fb7b42bf1e40fce3178f418fe9878a0b6435ae8a6a071" => :x86_64_linux
+  end
+
   # cite "https://doi.org/10.1093/bioinformatics/bts635"
 
   url "https://github.com/alexdobin/STAR/archive/2.7.3a.tar.gz"
