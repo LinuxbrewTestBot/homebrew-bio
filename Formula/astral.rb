@@ -7,10 +7,9 @@ class Astral < Formula
   head "https://github.com/smirarab/ASTRAL.git"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
     cellar :any_skip_relocation
-    sha256 "8244a801d3e6ff3571e13c0d9fe7149e0b28260f254ef2c3b5208bce660852e3" => :sierra
-    sha256 "b8bc5a4cf097a1b7787534cafbc7d9dbfb65549804a48df4e86a93962d12360a" => :x86_64_linux
+    sha256 "a172372a26eca9157cca20bf68031929ab40e7af9acdc25f76599dae7e26b974" => :mojave
+    sha256 "da19526c494d0846522a4e095766b3e9996cf01c0aa7e5c73db604167f0553bc" => :x86_64_linux
   end
 
   depends_on :java
