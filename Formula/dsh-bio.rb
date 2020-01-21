@@ -5,10 +5,9 @@ class DshBio < Formula
   sha256 "aae6e3e283f71994acf0f17152e088a98e1f240ab1c1f56e7035a474600e5972"
 
   bottle do
-    root_url "https://linuxbrew.bintray.com/bottles-bio"
     cellar :any_skip_relocation
-    sha256 "8f227cdab85ebad698b670fd74576e82b2f2e41557294c6ff6f3303adf4d1643" => :mojave
-    sha256 "bc5c1fc03571f4ffbc57dd59d8951878041d0f9b7a00729886f35e027c8d9208" => :x86_64_linux
+    sha256 "feacf2723a08f86530008db58ab90568463eec79e10d65a7876794a36ca6a197" => :catalina
+    sha256 "e52171c25de746f7acf3ac41796ddc69fbd6f1ab761fad55509ed70c7830662c" => :x86_64_linux
   end
 
   depends_on :java => "1.8+"
